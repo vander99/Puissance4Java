@@ -1,0 +1,105 @@
+package Features;
+import java.io.*;
+
+public class History {
+
+    public File create(){
+        File file = new File("log.txt");
+            try{
+                file.createNewFile();
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
+        return file;
+    }
+
+    public void fileNew(File file){
+        try {
+            FileWriter myWriter = new FileWriter(file);
+            myWriter.close();
+        }
+        catch (IOException e){
+            System.out.println("Erreur!");
+        }
+    }
+
+    public void play(File file, int i, int column){
+        try {
+            FileWriter myWriter = new FileWriter(file,true);
+            myWriter.write("Joueur " + i + " joue " + column + "\n");
+            myWriter.close();
+        }
+        catch (IOException e){
+            System.out.println("Erreur!");
+        }
+    }
+
+    public void players(File file, int i,String type,String name){
+        try {
+            FileWriter myWriter = new FileWriter(file,true);
+            myWriter.write("Joueur " + i + " est " + type + " " + name + "\n");
+            myWriter.close();
+        }
+        catch (IOException e){
+            System.out.println("Erreur!");
+        }
+    }
+
+    public void startRound(File file){
+        try {
+            FileWriter myWriter = new FileWriter(file,true);
+            myWriter.write("Manche commence" + "\n");
+            myWriter.close();
+        }
+        catch (IOException e){
+            System.out.println("Erreur!");
+        }
+    }
+
+    public void win(File file,int i){
+        try {
+            FileWriter myWriter = new FileWriter(file,true);
+            myWriter.write("Joueur " + i + " gagne " + "\n");
+            myWriter.close();
+        }
+        catch (IOException e){
+            System.out.println("Erreur!");
+        }
+    }
+
+    public void score(File file,int Score1,int Score2){
+        try {
+            FileWriter myWriter = new FileWriter(file,true);
+            myWriter.write("Score " + Score1 + " - " + Score2 + "\n");
+            myWriter.close();
+        }
+        catch (IOException e){
+            System.out.println("Erreur!");
+        }
+    }
+
+    public void end(File file){
+        try {
+            FileWriter myWriter = new FileWriter(file,true);
+            myWriter.write("Partie finie " + "\n");
+            myWriter.close();
+        }
+        catch (IOException e){
+            System.out.println("Erreur!");
+        }
+    }
+
+    public void equality(File file){
+        try {
+            FileWriter myWriter = new FileWriter(file,true);
+            myWriter.write("Egalite" + "\n");
+            myWriter.close();
+        }
+        catch (IOException e){
+            System.out.println("Erreur!");
+        }
+    }
+
+
+}

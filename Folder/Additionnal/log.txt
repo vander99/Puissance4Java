@@ -1,0 +1,7 @@
+Joueur 1 est humain a
+Joueur 2 est humain b
+Joueur 3 est humain c
+Manche commence
+Joueur 1 joue
+Joueur 2 joue
+Joueur 3 joue

@@ -1,4 +1,4 @@
 Afin d'exécuter ce projet, entrez dans le dossier Folder et tapez la commande "javac Main.java" puis "java Main".
-Les régles du jeu sont présente dans le pdf "Projet_poo.pdf"
+Les règles du jeu sont présentes dans le pdf "Projet_poo.pdf"
 Le dossier Additionnal contient le projet avec les fonctionnalités supplémentaires du pdf "Projet_poo.pdf"
-Le dossier des test se trouve dans expected_result
+Le dossier des tests se trouve dans expected_result. Certaines fonctionnalités ne sont pas pratiques, mais il fallait que le fonctionnement du code corresponde aux tests donnés par notre prof
